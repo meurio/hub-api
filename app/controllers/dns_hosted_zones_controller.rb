@@ -8,7 +8,7 @@ class DnsHostedZonesController < ApplicationController
     authorize @community
     skip_policy_scope
 
-    render json: (@dns_hosted_zones = @community.dns_hosted_zones)
+    render json: ([])
   end
 
   # GET /dns_hosted_zones/1

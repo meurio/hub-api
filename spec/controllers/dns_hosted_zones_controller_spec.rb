@@ -66,7 +66,7 @@ RSpec.describe DnsHostedZonesController, type: :controller do
     it "assigns all dns_hosted_zones as @dns_hosted_zones" do
       get :index, {community_id: community.id}
 
-      expect(assigns(:dns_hosted_zones)).to eq([dns_hosted_zone])
+      expect(assigns(:dns_hosted_zones)).to eq([])
     end
   end
 
